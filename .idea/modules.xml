@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BACKEND/BACKEND.iml" filepath="$PROJECT_DIR$/BACKEND/BACKEND.iml" />
       <module fileurl="file://$PROJECT_DIR$/frontend.iml" filepath="$PROJECT_DIR$/frontend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/school-management-saas-app.iml" filepath="$PROJECT_DIR$/.idea/school-management-saas-app.iml" />
     </modules>
   </component>
 </project>
