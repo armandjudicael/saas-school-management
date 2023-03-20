@@ -13,6 +13,7 @@ import java.util.List;
 @Path("api/v1/students")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
+@Transactional
 public class StudentRessource {
 
     @GET
@@ -22,30 +23,28 @@ public class StudentRessource {
 
     @GET
     @Path("/{id}")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Student get(Long id) {
+    public Student get(@PathParam(value = "id") Long id) {
         return Student.findById(id);
     }
     @POST
-    @Transactional
+
     public Response create(Student student) {
         student.persist();
         return Response.created(URI.create("/students/" + student.id)).build();
     }
     @PUT
     @Path("/{id}")
-    @Transactional
-    public Student update(Long id,Student app) {
+    public Student update(@PathParam(value = "id") Long id,Student app){
         Student entity = Student.findById(id);
         if(entity == null) {
             throw new NotFoundException();
         }
         return entity;
     }
+
     @DELETE
     @Path("/{id}")
-    @Transactional
-    public void delete(Long id) {
+    public void delete(@PathParam(value = "id") Long id) {
         Student entity = Student.findById(id);
         if(entity == null) {
             throw new NotFoundException();

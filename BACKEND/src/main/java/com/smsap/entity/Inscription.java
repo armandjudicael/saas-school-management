@@ -24,7 +24,6 @@ public class Inscription extends PanacheEntity {
     @OneToOne
     private Classe classe;
 
-    @Temporal(TemporalType.DATE)
     private LocalDate date;
 
 }

@@ -25,7 +25,6 @@ public class Cours extends PanacheEntity{
     @OneToOne
     private Teacher teacher;
 
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDate localDate;
 
     @ManyToMany(cascade = CascadeType.PERSIST)
