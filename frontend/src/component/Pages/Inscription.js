@@ -3,6 +3,7 @@ import { Form, Button } from 'react-bootstrap';
 import "../../Ressource/Style/registre.css";
 
 const Inscription = () => {
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
@@ -15,8 +16,8 @@ const Inscription = () => {
     event.preventDefault();
     // Submit form data to server
   };
-
   return (
+
     <div className='contenair'>
       <div className='row justify-content-center'>
         <h1 className='titre'>Formulaire d'inscription</h1>
@@ -24,13 +25,11 @@ const Inscription = () => {
 
             <Form onSubmit={handleSubmit}>
               <div className='ctr'>
-
                 <Form.Group controlId="formName" className='col-md-6'>
                   <Form.Label>Nom </Form.Label>
                   <Form.Control type="text" placeholder="Entrez votre nom complet" value={name} onChange={(e) => setName(e.target.value)} />
                 </Form.Group>
                 <Form.Group controlId="formName" className='col-md-6'>
-
                   <Form.Label>Nom </Form.Label>
                   <Form.Control type="text" placeholder="Entrez votre prenom" value={name} onChange={(e) => setName(e.target.value)} />
               </Form.Group>
@@ -89,11 +88,12 @@ const Inscription = () => {
             <Button variant="primary" type="submit">S'inscrire</Button>
 
             </Form>
+
         </div>
       </div>
     </div>
 );
-};
 
+};
 export default Inscription;
 

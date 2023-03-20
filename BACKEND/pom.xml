@@ -29,15 +29,12 @@
         </dependencies>
     </dependencyManagement>
     <dependencies>
-<<<<<<< HEAD
-=======
 
->>>>>>> 1d9d68b ( [feat]  init exam and subscription)
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-arc</artifactId>
         </dependency>
-<<<<<<< HEAD
+
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-resteasy-reactive</artifactId>
@@ -47,16 +44,12 @@
             <artifactId>quarkus-junit5</artifactId>
             <scope>test</scope>
         </dependency>
-=======
 
->>>>>>> 1d9d68b ( [feat]  init exam and subscription)
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
         </dependency>
-<<<<<<< HEAD
-=======
 
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -95,7 +88,6 @@
             <version>1.18.24</version>
         </dependency>
 
->>>>>>> 1d9d68b ( [feat]  init exam and subscription)
     </dependencies>
     <build>
         <plugins>
