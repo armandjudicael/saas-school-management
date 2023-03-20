@@ -3,6 +3,7 @@ import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import lombok.*;
 
 import javax.persistence.Entity;
+import java.util.HashMap;
 
 @Getter
 @Setter
@@ -17,4 +18,5 @@ public class Person  extends PanacheEntity {
     private Byte[] photo;
     private String numTel;
     private String email;
+    private HashMap<String,Byte[]> info;
 }

@@ -11,6 +11,9 @@ import javax.persistence.InheritanceType;
 @Inheritance(strategy = InheritanceType.JOINED)
 @Entity
 public class Student extends Person {
+
+
+
     public static Student findByName(String name) {
         return PanacheEntityBase.find("name", name).firstResult();
     }

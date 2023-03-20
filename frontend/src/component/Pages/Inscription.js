@@ -66,9 +66,8 @@ const Inscription = () => {
                 <Form.Label>Genre</Form.Label>
                 <Form.Control as="select" value={gender} onChange={(e) => setGender(e.target.value)}>
                   <option value="">Choisissez votre genre</option>
-                  <option value="male">Homme</option>
-                  <option value="female">Femme</option>
-                  <option value="other">Autre</option>
+                  <option value="male">Masculin</option>
+                  <option value="female">Feminin</option>
                 </Form.Control>
               </Form.Group>
 
@@ -88,6 +87,7 @@ const Inscription = () => {
             </Form.Group>
 
             <Button variant="primary" type="submit">S'inscrire</Button>
+
             </Form>
         </div>
       </div>
