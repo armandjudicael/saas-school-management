@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import "../../Ressource/Style/registre.css";
+import "../../../Ressource/Style/registre.css";
 
-const Inscription = () => {
+const Enregistrer = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [dateOfBirth, setDateOfBirth] = useState('');
   const [gender, setGender] = useState('');
 
@@ -47,16 +45,6 @@ const Inscription = () => {
                 <Form.Control type="text" placeholder="Entrez un nom d'utilisateur unique" value={username} onChange={(e) => setUsername(e.target.value)} />
               </Form.Group>
 
-              <Form.Group controlId="formPassword">
-                <Form.Label>Mot de passe</Form.Label>
-                <Form.Control type="password" placeholder="Entrez un mot de passe" value={password} onChange={(e) => setPassword(e.target.value)} />
-              </Form.Group>
-
-              <Form.Group controlId="formConfirmPassword">
-                <Form.Label>Confirmez le mot de passe</Form.Label>
-                <Form.Control type="password" placeholder="Entrez à nouveau le mot de passe" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
-              </Form.Group>
-
               <Form.Group controlId="formDateOfBirth">
                 <Form.Label>Date de naissance</Form.Label>
                 <Form.Control type="date" placeholder="Entrez votre date de naissance" value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} />
@@ -86,7 +74,7 @@ const Inscription = () => {
               <Form.Control type="file" accept=".pdf, .jpg, .jpeg, .png" />
             </Form.Group>
 
-            <Button variant="primary" type="submit">S'inscrire</Button>
+            <Button variant="primary" type="submit">Ajouter</Button>
 
             </Form>
         </div>
@@ -95,5 +83,5 @@ const Inscription = () => {
 );
 };
 
-export default Inscription;
+export default Enregistrer;
 

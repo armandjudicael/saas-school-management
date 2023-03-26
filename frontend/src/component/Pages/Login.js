@@ -48,7 +48,7 @@ const login = async (e)=>{
                 <button className="btn mt-3" onClick={login}>Login</button>
             </form>
            <div className="text-center fs-6">
-               <span><Link to='/password'>Forget password?</Link> or <Link to='/registre'>Sign up</Link></span>
+               <span><Link to='/password'>Forget password?</Link> or <Link to='/signup'>Sign up</Link></span>
             </div>
     </div>
     );
