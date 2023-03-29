@@ -126,8 +126,7 @@ export default function SignUp() {
                   type="file"
                   name="file"
                   value={values.logo}
-                  onChange={handleChange("logo")}
-                  inputProps={{ accept: '.jif,.jpeg,.png' }} // Ajouter les types de fichiers acceptés
+                  onChange={handleChange("logo")}ptypes de fichiers acceptés
                 />
               </FormControl>
             </Grid>
